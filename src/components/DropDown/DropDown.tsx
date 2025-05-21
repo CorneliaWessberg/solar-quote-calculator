@@ -11,7 +11,6 @@ type DropDownItem = {
 };
 
 type DropDown = {
-  placeholder?: string;
   items: Array<DropDownItem>;
   value?: string;
   onChange?: (value: string) => void;
@@ -19,7 +18,6 @@ type DropDown = {
 };
 
 export default function DropDown({
-  placeholder,
   items,
   label,
   onChange,
