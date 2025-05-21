@@ -18,7 +18,7 @@ export default function Button({
   onClick,
 }: ButtonType) {
   return (
-    <button className={clsx(styles["button"], styles[variant])}>
+    <button className={clsx(styles["button"], styles[variant])} onClick={onClick}>
       {children}
     </button>
   );

@@ -1,1 +1,9 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
 
+.heading {
+    margin-bottom: 60px;
+}

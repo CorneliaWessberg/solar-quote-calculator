@@ -1,14 +1,27 @@
-h1 {
-  font-size: 50px;
+.h1 {
+  font-size: 48px;
   line-height: 1.2;
+  margin-bottom: 40px;
 }
 
-h2 {
+.h2 {
   font-size: 36px;
   line-height: 1.35;
 }
 
-h3 {
+.h3 {
   font-size: 20px;
   line-height: 1.2;
+}
+
+.s {
+  font-size: 24px;
+}
+
+.m {
+  font-size: 36px;
+}
+
+.l {
+  font-size: 48px;
 }

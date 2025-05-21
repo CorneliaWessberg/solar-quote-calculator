@@ -1,0 +1,19 @@
+.input-wrapper {
+    max-width: 350px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #F1F3F4;
+    border-radius: 5px;
+    font-family: var(--font-dm-sans);
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.input:focus, .input:focus-visible {
+    outline: 1px solid #202124;
+    outline-offset: 2px;
+}

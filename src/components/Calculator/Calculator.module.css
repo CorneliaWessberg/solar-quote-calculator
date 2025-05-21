@@ -1,0 +1,20 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs {
+    display: flex;
+    gap: 20px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    color: black;
+}
