@@ -5,8 +5,6 @@ import clsx from "clsx";
 // styles
 import styles from "./DropDown.module.css";
 
-// Components
-
 type DropDownItem = {
   id: string;
   label: string;
@@ -15,7 +13,7 @@ type DropDownItem = {
 type DropDown = {
   placeholder?: string;
   items: Array<DropDownItem>;
-  value?: string; 
+  value?: string;
   onChange?: (value: string) => void;
   label?: string;
 };
@@ -25,11 +23,9 @@ export default function DropDown({
   items,
   label,
   onChange,
-  value
+  value,
 }: DropDown) {
-
   const [open, setOpen] = useState(false);
-  // const [value, setValue] = useState<DropDownItem | undefined>(items[0]);
 
   return (
     <div className={clsx(styles["dropdown"])}>

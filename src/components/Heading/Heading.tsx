@@ -13,7 +13,18 @@ type HeadingType = {
   children?: ReactNode;
 };
 
-export default function Heading({ tag = "h2", size = "l", children, className }: HeadingType) {
+export default function Heading({
+  tag = "h2",
+  size = "l",
+  children,
+  className,
+}: HeadingType) {
   const Element: TagVariant = tag as TagVariant;
-  return <Element className={clsx(styles["heading"], styles[tag], styles[size], className)}>{children}</Element>;
+  return (
+    <Element
+      className={clsx(styles["heading"], styles[tag], styles[size], className)}
+    >
+      {children}
+    </Element>
+  );
 }

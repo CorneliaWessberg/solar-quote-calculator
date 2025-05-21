@@ -1,24 +1,31 @@
 .summary-banner {
-    width: 100%;
-    background-color: #2e303b;
-    border-radius: 28px;
-    color: white;
-    display: flex;
-    gap: 20px;
+  width: 100%;
+  background-color: #2e303b;
+  border-radius: 28px;
+  color: white;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .summary-banner {
+    flex-direction: row;
     padding: 30px 60px;
-    flex: 1 2;
+  }
 }
 
 .current-cost {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
 }
 
 .savings {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 40px;
 }

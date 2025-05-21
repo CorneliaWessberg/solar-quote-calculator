@@ -1,20 +1,50 @@
 .calculator {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .inputs {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .inputs {
+    flex-direction: row;
+  }
+
+  .submit {
+    justify-content: flex-start;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
 }
 
 .arrow {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .back-btn {
-    display: inline-block;
-    color: black;
+  display: inline-block;
+  color: black;
 }
