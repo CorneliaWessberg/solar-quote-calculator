@@ -8,6 +8,7 @@ import styles from "./Calculator.module.css";
 import SummaryBanner from "@/components/SummaryBanner/SummaryBanner";
 import Button from "@/components/Button/Button";
 import Image from "next/image";
+import { ArrowLeft } from "../Icons/arrow-left";
 
 export default function CalculatorStep2({
   calculatorData,
@@ -19,7 +20,7 @@ export default function CalculatorStep2({
       <SummaryBanner {...calculatorData} />
       <div className={styles["buttons"]}>
         <Button variant="back" onClick={onBack}>
-          <Image alt="arrow" src="/left-arrow.svg" className={styles["arrow"]} />
+          <span className={styles["arrow"]}><ArrowLeft /></span>
           <span className={styles["back-btn"]}>Tillbaka</span>
         </Button>
         <Button onClick={onNext}>

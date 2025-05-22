@@ -5,6 +5,9 @@ import clsx from "clsx";
 // styles
 import styles from "./DropDown.module.css";
 
+// components 
+import { ChevronDown } from "../Icons/chevron-down";
+
 type DropDownItem = {
   id: string;
   label: string;
@@ -31,7 +34,7 @@ export default function DropDown({
       <div className={clsx(styles["trigger"])} onClick={() => setOpen(!open)}>
         {value ?? "Välj storlek"}
         <span className={clsx(styles["icon"], open && styles["rotate"])}>
-          <img src="/chevron-down.svg" />
+          <ChevronDown />
         </span>
       </div>
       <div className={clsx(styles["content"], open && styles["open"])}>
